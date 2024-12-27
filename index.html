@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Page</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif, Helvetica;
+            height: 100vh;
+        }
+
+        h1 {
+            color: green;
+            
+        }
+
+        .main {
+            text-align: center;
+            background-color: beige;
+            border-radius: 8px;
+            /* border: 1px solid black; */
+            box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+            padding: 35px;
+            /* width: 400px; */
+        }
+
+        label {
+            display: block; 
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            /* margin-left: 10px;  */
+            text-align: left; 
+            color: #555;  
+            font-weight: bold;  
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 50%;
+            padding: 10px 20px;
+            border: none;
+            /* margin-top: 15px;
+            margin-bottom: 15px; */
+            border-radius: 50px;
+            color: white;
+            cursor: pointer;
+            background-color: green;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form action="">
+
+            <h1>Sign-up</h1>
+            <h3>Enter your login credentials</h3>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+
+            <label for="name">First Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your first name">
+
+            <label for="name">Last Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your last name">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password">
+
+            <p>By creating an account, I agree to <a href="#" style="text-decoration: none;">Terms and Conditions</a></p>
+
+            <button type="submit">Create Account</button>
+
+            <p>Already have an account? 
+                <a href="#" style="text-decoration: none;">Login</a>
+            </p>
+            <p><a href="#" style="text-decoration: none;">Need help ?</a></p>
+        </form>
+    </div>
+</body>
+</html>
